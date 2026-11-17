@@ -1,0 +1,51 @@
+{
+  "config": {
+    "data": "data/synthetic",
+    "out": "outputs",
+    "categories": null,
+    "size": 256,
+    "stride": 8,
+    "coreset": 0.1,
+    "k": 1,
+    "seed": 0
+  },
+  "mean": {
+    "image_auroc": 0.9937499999999999,
+    "pixel_auroc": 0.9917485433741731,
+    "pixel_ap": 0.42409512953499806
+  },
+  "categories": {
+    "fabric": {
+      "image_auroc": 1.0,
+      "pixel_auroc": 0.99524824980521,
+      "pixel_ap": 0.4975745311625403,
+      "per_defect_image_auroc": {
+        "crack": 1.0,
+        "hole": 1.0,
+        "scratch": 1.0,
+        "stain": 1.0
+      },
+      "n_train": 40,
+      "n_test": 60,
+      "bank_size": 4096,
+      "fit_seconds": 15.9,
+      "ms_per_image": 41.6
+    },
+    "metal": {
+      "image_auroc": 0.9874999999999999,
+      "pixel_auroc": 0.9882488369431363,
+      "pixel_ap": 0.35061572790745577,
+      "per_defect_image_auroc": {
+        "crack": 1.0,
+        "hole": 1.0,
+        "scratch": 0.95,
+        "stain": 1.0
+      },
+      "n_train": 40,
+      "n_test": 60,
+      "bank_size": 4096,
+      "fit_seconds": 15.8,
+      "ms_per_image": 42.2
+    }
+  }
+}
